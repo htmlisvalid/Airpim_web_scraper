@@ -125,6 +125,7 @@ To scrape data from eBay and save it to a CSV file:
 ## Notes
 
 - The scraper currently ignores SSL verification warnings for simplicity. This is not recommended for production use.
+- There might be a problem related to the dealing of number of pages scraped. This is currently being worked on.
 - Customize the model file to suit the structure of the target website.
 - Ensure that the CSS selectors in the model file accurately match the elements you wish to scrape from the target website.
 
