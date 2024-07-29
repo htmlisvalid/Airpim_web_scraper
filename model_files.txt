@@ -45,7 +45,7 @@ seller_selector = .WJMUdc
 rating_selector = .yi40Hd 
 number_of_rewievs_selector = .RDApEe
 
-## Wikipedia "List of largest companies in the United States by revenue
+## Wikipedia "List of largest companies in the United States by revenue"
 url = https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue
 num_pages = 1
 item_selector = table.wikitable.sortable tbody tr
@@ -56,3 +56,15 @@ revenue_selector = td:nth-child(4)
 growth_selector = td:nth-child(5)
 employees_selector = td:nth-child(6)
 headquarters_selector = td:nth-child(7) a
+
+## Wikipedia "Olympics History"
+url = https://it.wikipedia.org/wiki/Giochi_olimpici
+num_pages = 1
+item_selector = .wikitable tbody tr
+date_summer_selector = td:nth-child(2)
+title_summer_selector = td:nth-child(3) 
+location_summer_selector = td:nth-child(4)
+date_winter_selector = td:nth-child(6)
+title_winter_selector = td:nth-child(7) 
+location_winter_selector = td:nth-child(8)
+# Table may not be correctedly handled.
