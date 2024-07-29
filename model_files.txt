@@ -1,0 +1,58 @@
+## Ebay
+url = https://www.ebay.it/e/campagne-speciali/apple
+num_pages = 1
+item_selector = .s-item
+title_selector = .s-item__title
+price_selector = .s-item__price
+link_selector = .s-item__link
+
+## Animp
+url = https://animp.it/associati/elenco-soci/
+num_pages = 1
+item_selector = .card-body
+name_selector = .card-title
+link_selector = .readmore a
+detail_page_selector = .rightCol
+detail_name_selector = h2.h4
+detail_phone_selector = h3:contains('Telefono') 
+detail_email_selector = h3:contains('E-mail') a
+detail_website_selector = h3:contains('Sito web') a
+
+## Diesel
+url = https://it.diesel.com/it/uomo/nuovi-arrivi/jeans/
+num_pages = 1
+item_selector = .product
+title_selector = .product-tile-body__link
+price_selector = .product-tile-body__price
+link_selector = .tile-image-link
+
+## Liceo Galileo Galilei
+url = https://www.lsgalilei.org/
+num_pages = 1
+item_selector = .mfp_default_item
+title_selector = .mfp_default_title a
+date_selector = .mfp_date
+desc_selector = .mfp_introtext
+link_selector = .mfp_default_title a
+
+## Google products penumatici
+url = https://www.google.com/search?sca_esv=1671dfeb145c5278&rlz=1C1CHBF_itIT890IT890&sxsrf=ADLYWIKlVE8695opytPFVfIOSDulh0hcsQ:1722239882481&q=pneumatici&udm=3&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_TJ4YMS4eRay1mUcjRHkZxj_ICjfQ0XnWc5encBpaCN5PS_XovpphgAnII7hbxL303OX3tYay7N4fKNo0jBVCNHlgE3GZkpPl5ndKwHrQmOiPyUGcMr50yvmZ9NINygw3RwUnQlnibrBlP7MvIU_OmkFO4f&sa=X&ved=2ahUKEwi276bD48uHAxXva0EAHfT0BPsQs6gLegQIFRAB&biw=1813&bih=811&dpr=1.06
+num_pages = 1
+item_selector = .MUWJ8c
+name_selector = .gkQHve 
+price_selector = .lmQWe
+seller_selector = .WJMUdc
+rating_selector = .yi40Hd 
+number_of_rewievs_selector = .RDApEe
+
+## Wikipedia "List of largest companies in the United States by revenue
+url = https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue
+num_pages = 1
+item_selector = table.wikitable.sortable tbody tr
+rank_selector = td:nth-child(1)
+name_selector = td:nth-child(2) a
+industry_selector = td:nth-child(3) 
+revenue_selector = td:nth-child(4)
+growth_selector = td:nth-child(5)
+employees_selector = td:nth-child(6)
+headquarters_selector = td:nth-child(7) a
