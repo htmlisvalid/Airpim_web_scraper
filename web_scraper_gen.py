@@ -65,11 +65,13 @@ def scrape_page(html_content, config, headers, base_url):
 
 # Function to save data to a CSV file
 def save_to_csv(data, fieldnames, file_name):
+    filtered_fieldnames = [field.replace('_selector', '') for field in fieldnames if 'item' not in field]
     with open(file_name, 'w', newline='', encoding='utf-8') as csvfile:  # Open the CSV file in write mode
-        writer = csv.DictWriter(csvfile, fieldnames=[field.replace('_selector', '') for field in fieldnames])  # Write data to the CSV file
+        writer = csv.DictWriter(csvfile, fieldnames=filtered_fieldnames)  # Write data to the CSV file
         writer.writeheader()  # Write the header
         for row in data:  # Iterate over the data
-            writer.writerow(row)  # Write each row to the CSV file
+            filtered_row = {key: value for key, value in row.items() if 'item' not in key}
+            writer.writerow(filtered_row)  # Write each row to the CSV file
 
 # Main function
 def main():
